@@ -4,6 +4,8 @@ import { createBrowserHistory } from 'history'
 import Reconcilation from './parts/01-reconcilation'
 import ControlledComponent from './parts/02-controlled-components'
 import LongList from './parts/03-long-lists'
+import CustomProfiler from './parts/04-profiler'
+import UseMemo from './parts/05-use-memo'
 
 const history = createBrowserHistory()
 
@@ -42,8 +44,8 @@ export default function App() {
 						component={ControlledComponent}
 					/>
 					<Route path="/03-long-lists" component={LongList} />
-					<Route path="/04-use-memo">useMemo</Route>
-					<Route path="/05-profiler">profiler</Route>
+					<Route path="/04-profiler" component={CustomProfiler} />
+					<Route path="/05-use-memo" component={UseMemo} />
 				</Switch>
 			</div>
 		</Router>
